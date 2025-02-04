@@ -1,0 +1,137 @@
+body{ 
+	background-color: rgb(21, 17, 17);
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+nav{
+	background-color: #901414;
+	border-radius: 12px; 
+	width: 25vw;
+	height: 4vh;
+	margin-top: 5vh;
+}
+
+a{
+	color: #FFFAF2; 
+	font-family: "poppins"; 
+	text-decoration: none;}
+
+h1{ 
+	color: #FFFAF2; 
+	font-family: "league spartan"; 
+	font-size: 32px; 
+	padding: 10px;
+}
+
+h3{ 
+	color: #FFFAF2;
+	font-family: "poppins";
+	font-weight: 500;
+	font-size: 20px;
+}
+
+p{   
+	color: #FFFAF2; 
+	font-family: "poppins"; 
+	font-size: 16px;
+}
+
+footer{
+	border-radius: 15px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	background-color: #1F1E1E;
+	width: 70vw; 
+	margin-top: 1vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dropdown:hover .dropcontent{
+	display: block;
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+.dropcontent{
+	transform: translateX(-10%);
+	display: none;
+	position: absolute;
+	background-color: #901414;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.dropcontent a{
+	display: inline-block;
+	padding: 1vh 1vw;
+}
+
+.Vnav{
+	display: flex; 
+	justify-content: space-around;
+	align-items: center;
+	width: 25vw;
+	height: 4vh;
+}
+
+.Vnav i{
+	color: #FFFAF2;
+}
+
+.Hnav{
+	transform: translateX(1vw);
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 25vw;
+	height: 4vh;
+}
+
+.searchbar{
+	background-color:#FFFAF2;
+	width: 15vw;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	padding: 2px;
+}
+
+.searchbar input{
+	background-color: transparent; 
+	flex: 1;
+	border: none;
+	outline: none;
+	padding: 0px 10px;
+	font-size: 16px;
+	color: #1F1E1E;
+}
+.searchbar i{
+	padding-right: 5px;
+}
+
+::placeholder{color: #1F1E1E;}
+
+.banner{
+	display: flex;
+	justify-content: space-between;
+	width: 70vw;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	margin-left: 15vw;
+}
+
+.box{
+	display: flex;
+	border-radius: 15px;
+	background-color: #292626; 
+	width: 70vw;
+	margin-left: 15vw;
+	margin-top: 2vh;
+}

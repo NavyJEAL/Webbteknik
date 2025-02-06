@@ -20,64 +20,62 @@
 
 <body>
 	<div class="banner">
-		<nav>
-			<div class="Vnav">
-					<div class="dropdown">
-						<a>Biljetter</a>
-						<div class="dropcontent">
-							<a href="./ticketInfo.html">Biljettinformation</a><br>
-							<a href="./movies.html">Filmer</a>
-						</div>
-					</div>
-					<a href="./event.html">Evenemang</a>
-					<a href="./about.html">Om Oss</a>
-			</div>
-		</nav>
+			<nav id="Vnav">
+				<ul>
+					<li><a>Biljetter</a></li>
+						<ul class="dropdown">
+							<li><a href="./ticketInfo.html">Biljettinformation</a></li>
+							<li><a href="./movies.html">Filmer</a></li>
+						</ul>
+					</li>
+					<li><a href="./event.html">Evenemang</a></li>
+					<li><a href="./about.html">Om Oss</a></li>
+				</ul>
+			</nav>
 
-		<div>
+		<div class="logo">
 			<a href="./index.html">
-			<img src="/images/logo.png" height="120px" alt="logotyp"></a>
+			<img src="/images/logo.png" height="100px" alt="logotyp"></a>
 		</div>
 
-		<nav>
-			<div class="Hnav">
-				<a href="./membership.html">Bli medlem</a>
+			<nav id="Hnav">
+				<a id="member" href="./membership.html">Bli medlem</a>
 				<form action="" class="searchbar">
 					<input type="text" placeholder="Sök film, genrer eller event">
 					<i class="material-icons">search</i>
 				</form>
+			</nav>
+	</div>
+
+	<div class="main">
+		<div class="box" id="Now">
+			<div>
+				<h1>Visas nu</h1>
+				<button>Visa mer</button>
 			</div>
-		</nav>
-	</div>
-
-	<div class="box">
-		<div>
-			<h1>Visas nu</h1>
-			<button>Visa mer</button>
 		</div>
-	</div>
 
-	<div class="box">
-		<div>
-			<h1>Program</h1>
-						<button><a href="program.html">Dag 1</a></button>
-						<button><a href="program.html">Dag 2</a></button>
-						<button><a href="program.html">Dag 3</a></button>
-						<button><a href="program.html">Dag 4</a></button>
-						<button><a href="program.html">Dag 5</a></button>
+		<div class="box" id="program">
+			<div>
+				<h1>Program</h1>
+				<button><a href="program.html">Dag 1</a></button>
+				<button><a href="program.html">Dag 2</a></button>
+				<button><a href="program.html">Dag 3</a></button>
+				<button><a href="program.html">Dag 4</a></button>
+				<button><a href="program.html">Dag 5</a></button>
+			</div>
 		</div>
-	</div>
 
+		<div class="box" id="event">
+			<h1>Evenemang</h1>
+		</div>
 
-	<div class="box">
-	<h1>Evenemang</h1>
-	</div>
-	<div class="box">
-	<h1>Kommer snart</h1>
+		<div class="box" id="coming">
+			<h1>Kommer snart</h1>
+		</div>
 	</div>
 
 	<footer>
-		
 		<div>
 			<h3>Kontakta oss</h3>
 			<p>072 - 713 43 40</p>
@@ -100,7 +98,7 @@
 			<a href="https://facebook.com/folketsbioumea">Facebook</a><br>
 			<a href="./newsletter.html">Nyhetsbrev</a><br>
 		</div>
-
 	</footer>
+
 </body>
 

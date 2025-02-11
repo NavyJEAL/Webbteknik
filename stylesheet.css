@@ -2,37 +2,117 @@ body{
 	background-color:#131010; 
 	margin: 0; 
 	padding: 0;
-	display: grid;
-	grid-template-columns: 15vw 70vw 15vw;
-	grid-template-rows: 10vh auto auto auto auto auto;
-	row-gap: 10vh;
+}
+
+.banner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70vw;
+	margin: 5vh auto 3vh auto;
 }
 
 nav{
 	background-color: #901414;
 	border-radius: 10px;
 }
+	/* LEFT SIDE NAVIGATION BAR */
+	#Vnav{
+		height: 5vh;
+		width: 25vw;
+	}
 
-footer{
-	background-color: #1C1A1A;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	grid-column: 2/3;
-	grid-row: 6/7;
-}
+	ul{
+		display: flex;
+		justify-content: space-around;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		place-self: center;
+	}
+	
+	li{float: left;}
+	
+	li a, .dropbtn{
+		display: inline-block;
+		text-align: center;
+		padding: 1vh;
+		text-decoration: none;
+	}
+	
+	li.dropdown{display: inline-block;}
+	
+	.drop-content{
+		display: none; 
+		position: absolute; 
+		background-color: #901414;
+		padding-top: 10px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	
+	.dropdown-content a {
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+	
+	.dropdown:hover .drop-content{display: block;}
+	ul li a{font-size: 18px;}
+	
+
+	/* RIGHT SIDE NAVIGATION BAR */
+	#Hnav{
+		height: 5vh;
+		width: 25vw;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+		.searchbar{
+			background-color:#FFFAF2;
+			border-radius: 10px;
+			border: none;
+			display: flex;
+			justify-content: center;
+			padding: 1%;
+			align-items: center;
+		}
+
+		.searchbar input{
+			font-family: "poppins"; 
+			font-size: 16px;
+			color:#131010; 
+			background-color: transparent;
+			border: none;
+			outline: none;
+			width: 13vw;
+		}
+
+		.searchbar button{
+			border: none; 
+			background-color: transparent;
+			padding: 0;
+			margin: 0;
+		}
+
+		#member{font-size: 18px;}
+		::placeholder{color:#1C1A1A;}
+
 
 h1{
 	color: #FFFAF2;
 	font-family: "league spartan"; 
 	font-size: 32px; 
-	padding: 3vh;
+	padding: 2vh;
 }
 
 h3{color: #FFFAF2;
 	font-family: "poppins";
 	font-weight: 500;
 	font-size: 20px;
-	padding: 3vh;
+	padding-top: 2vh;
 }
 
 a{
@@ -50,41 +130,48 @@ p{
 	font-size: 16px;
 }
 
-ul li a{font-size: 20px;}
-
-.banner{
-	display: grid;
-	grid-column: 2/3;
-	grid-template-columns: 25vw 20vw 25vw;
-	grid-template-rows: 10vh 5vh 10vh;
-}
-
-.logo{
-
-	grid-column: 2/3;
-	grid-row: 2/3;
-	place-self: center; 
-}
-
-#Vnav{
-
-	grid-column: 1/2;
-	grid-row: 2/3;
-}
-
-#Hnav{
-	grid-column: 3/4;
-	grid-row: 2/3;
-}
-
+/* MAIN CONTAINER FOR THE ELEMENTS */
 .main{
-	grid-column: 2/3; 
-	grid-row: 2/6;
+	width: 70vw;
+	margin: auto auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
+/* BOXES IN THE MAIN CONTAINER */
 .box{
 	background-color: #292626;
 	border-radius: 15px;
+	margin: 1vh 0vh;
 }
 
-#member{font-size: 20px;}
+.days{
+	display: flex;
+	justify-content: space-around;
+}
+
+footer{
+	background-color: #1C1A1A;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	width: 70vw;
+	margin: 1vh auto 0 auto;
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 600px){
+
+footer{grid-column: 1/4;}
+
+.banner{grid-column: 1/4; margin: 0px 4vw;}
+
+.main{grid-column: 1/4;}
+
+.box{border-radius: 0;}
+
+.logo{grid-column: 1/2; scale: 80%;}
+
+}
+
+}

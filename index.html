@@ -22,11 +22,11 @@
 	<div class="banner">
 			<nav id="Vnav">
 				<ul>
-					<li><a>Biljetter</a></li>
-						<ul class="dropdown">
-							<li><a href="./ticketInfo.html">Biljettinformation</a></li>
-							<li><a href="./movies.html">Filmer</a></li>
-						</ul>
+					<li class="dropdown"><a class="dropbtn">Biljetter</a>
+						<div class="drop-content">
+							<a href="./ticketInfo.html">Biljettinformation</a><br>
+							<a href="./movies.html">Filmer</a>
+						</div>
 					</li>
 					<li><a href="./event.html">Evenemang</a></li>
 					<li><a href="./about.html">Om Oss</a></li>
@@ -40,15 +40,15 @@
 
 			<nav id="Hnav">
 				<a id="member" href="./membership.html">Bli medlem</a>
-				<form action="" class="searchbar">
+				<div class="searchbar">
 					<input type="text" placeholder="Sök film, genrer eller event">
-					<i class="material-icons">search</i>
-				</form>
+					<button><i class="material-icons">search</i></button>
+				</div>
 			</nav>
 	</div>
 
 	<div class="main">
-		<div class="box" id="Now">
+		<div class="box" id="now">
 			<div>
 				<h1>Visas nu</h1>
 				<button>Visa mer</button>
@@ -56,16 +56,15 @@
 		</div>
 
 		<div class="box" id="program">
-			<div>
 				<h1>Program</h1>
-				<button><a href="program.html">Dag 1</a></button>
-				<button><a href="program.html">Dag 2</a></button>
-				<button><a href="program.html">Dag 3</a></button>
-				<button><a href="program.html">Dag 4</a></button>
-				<button><a href="program.html">Dag 5</a></button>
-			</div>
+				<div class="days">
+					<button><a href="program.html">Måndag 13/12</a></button>
+					<button><a href="program.html">Måndag 13/12</a></button>
+					<button><a href="program.html">Måndag 13/12</a></button>
+					<button><a href="program.html">Måndag 13/12</a></button>
+					<button><a href="program.html">Måndag 13/12</a></button>
+				</div>
 		</div>
-
 		<div class="box" id="event">
 			<h1>Evenemang</h1>
 		</div>
@@ -76,27 +75,33 @@
 	</div>
 
 	<footer>
-		<div>
-			<h3>Kontakta oss</h3>
-			<p>072 - 713 43 40</p>
-			<p>info@folketsbioumea.se</p>
-			<p>Folkets Bio Umeå,<br> Västra Strandgatan 11,<br>Lastintaget, 90326 Umeå</p>
+		<div class="contact">
+			<table>
+				<tr><h3>Kontakta oss</h3></tr>
+				<tr><p>072 - 713 43 40</p></tr>
+				<tr><p>info@folketsbioumea.se</p></tr>
+				<tr><p>Folkets Bio Umeå,<br>Västra Strandgatan 11,<br>Lastintaget, 90326 Umeå</p></tr>
+			</table>
 		</div>
 
-		<div>
-			<h3>Om oss</h3>
-			<a href="./about.html">Om Folkets Bio Umeå</a><br>
-			<a href="./findus.html">Hitta till oss</a><br>
-			<a href="./access.html">Tillgänglighet</a><br>
-			<a href="http://www.vaven.se/sve/boka-lokaler-i-vaven.html">Hyr biografen</a><br>
-			<a href="./schoolarship.html">Berits stipendium</a>
+		<div class="about">
+			<table>
+				<tr><h3>Om oss</h3></tr>
+				<tr><a href="./about.html">Om Folkets Bio Umeå</a><br></tr>
+				<tr><a href="./findus.html">Hitta till oss</a><br></tr>
+				<tr><a href="./access.html">Tillgänglighet</a><br></tr>
+				<tr><a href="http://www.vaven.se/sve/boka-lokaler-i-vaven.html">Hyr biografen</a><br></tr>
+				<tr><a href="./schoolarship.html">Berits stipendium</a><br></tr>
+			</table>
 		</div>
 
-		<div>
-			<h3>Följ oss</h3>
-			<a href="https://instagram.com/folketsbioumea">Instagram</a><br>
-			<a href="https://facebook.com/folketsbioumea">Facebook</a><br>
-			<a href="./newsletter.html">Nyhetsbrev</a><br>
+		<div class="follow">
+			<table>
+				<tr><h3>Följ oss</h3></tr>
+				<tr><a href="https://instagram.com/folketsbioumea">Instagram</a><br></tr>
+				<tr><a href="https://facebook.com/folketsbioumea">Facebook</a><br></tr>
+				<tr><a href="./newsletter.html">Nyhetsbrev</a></tr>
+			</table>
 		</div>
 	</footer>
 

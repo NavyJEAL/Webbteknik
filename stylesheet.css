@@ -29,7 +29,6 @@ nav{
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		place-self: center;
 	}
 	
 	li{float: left;}
@@ -76,8 +75,7 @@ nav{
 			border: none;
 			display: flex;
 			justify-content: center;
-			padding: 1%;
-			align-items: center;
+			padding: 0.5%;
 		}
 
 		.searchbar input{
@@ -90,11 +88,12 @@ nav{
 			width: 13vw;
 		}
 
-		.searchbar button{
+		.searchbar i{
 			border: none; 
+			color:#131010;
 			background-color: transparent;
 			padding: 0;
-			margin: 0;
+			margin-right: 1%;
 		}
 
 		#member{font-size: 18px;}
@@ -105,7 +104,8 @@ h1{
 	color: #FFFAF2;
 	font-family: "league spartan"; 
 	font-size: 32px; 
-	padding: 2vh;
+	padding: 1vh 2vw;
+	margin-left: 3vh;
 }
 
 h3{color: #FFFAF2;
@@ -146,9 +146,68 @@ p{
 	margin: 1vh 0vh;
 }
 
+.movies-now{
+	display: grid; 
+	grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
+	grid-template-rows: auto;
+	justify-content: space-around;
+	margin: 5vh 2vw;
+}
+
+.movies-now img{
+	height: 26vh; 
+	width: 10vw; 
+	object-fit: cover;
+}
+
+.show-more{
+	display: flex; 
+	justify-content: center;
+	margin-top: -1vh;
+}
+
 .days{
 	display: flex;
 	justify-content: space-around;
+	margin: 0 1vw;
+}
+
+button{
+	background-color: #3B3838;
+	border: none;
+	padding: 1vh 1vw;
+	font-family: "poppins";
+	font-size: 16px; 
+	color: #FFFAF2;
+	border-radius: 10px;
+	margin: 0 0 4vh 0;
+}
+
+.event-type{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin-bottom: 4vh;
+}
+
+.event-type img{
+	height: 10vw; 
+	width: 10vw; 
+	object-fit: cover;
+}
+
+.coming-soon{	
+	display: grid; 
+	grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
+	grid-template-rows: auto;
+	justify-content: space-around;
+	margin: 5vh 2vw;
+}
+
+.coming-soon img{
+	height: 26vh; 
+	width: 10vw; 
+	object-fit: cover;
 }
 
 footer{
@@ -158,6 +217,11 @@ footer{
 	width: 70vw;
 	margin: 1vh auto 0 auto;
 }
+
+.container{	
+	display: grid;
+	grid-template-columns: 12vw 10vw 7vw;
+	justify-content: space-around;}
 
 /* MOBILE VERSION */
 @media only screen and (max-width: 600px){

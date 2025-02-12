@@ -49,6 +49,7 @@ nav{
 		padding-top: 10px;
 		border-bottom-right-radius: 10px;
 		border-bottom-left-radius: 10px;
+		margin-top: -1vh;
 	}
 	
 	.dropdown-content a {
@@ -103,16 +104,29 @@ nav{
 h1{
 	color: #FFFAF2;
 	font-family: "league spartan"; 
-	font-size: 32px; 
-	padding: 1vh 2vw;
-	margin-left: 3vh;
+	font-weight: 500;
+	font-size: 34px; 
 }
 
-h3{color: #FFFAF2;
+h2{
+	color: #FFFAF2;
+	font-family: "league spartan";
+	font-weight: 400;
+	font-size: 28px;
+	padding-top: 2vh;}
+
+h3{
+	color: #FFFAF2;
 	font-family: "poppins";
 	font-weight: 500;
 	font-size: 20px;
 	padding-top: 2vh;
+}
+h4{
+	color: #FFFAF2;
+	font-family: "poppins";
+	font-weight: 500;
+	font-size: 16px;
 }
 
 a{
@@ -128,6 +142,7 @@ p{
 	font-family: "poppins";
 	font-weight: 400;
 	font-size: 16px;
+	margin: 0;
 }
 
 /* MAIN CONTAINER FOR THE ELEMENTS */
@@ -144,18 +159,19 @@ p{
 	background-color: #292626;
 	border-radius: 15px;
 	margin: 1vh 0vh;
+	padding: 4vh 4vw;
 }
 
 .movies-now{
 	display: grid; 
 	grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
 	grid-template-rows: auto;
-	justify-content: space-around;
-	margin: 5vh 2vw;
+	justify-content: space-between;
+	margin-top: 5vh;
 }
 
 .movies-now img{
-	height: 26vh; 
+	height: 28vh; 
 	width: 10vw; 
 	object-fit: cover;
 }
@@ -163,31 +179,29 @@ p{
 .show-more{
 	display: flex; 
 	justify-content: center;
-	margin-top: -1vh;
 }
 
 .days{
 	display: flex;
-	justify-content: space-around;
-	margin: 0 1vw;
+	justify-content: space-between;
 }
+.days button{margin: 0;}
 
 button{
 	background-color: #3B3838;
 	border: none;
-	padding: 1vh 1vw;
+	padding: 1vh 2vw;
 	font-family: "poppins";
 	font-size: 16px; 
 	color: #FFFAF2;
 	border-radius: 10px;
-	margin: 0 0 4vh 0;
+	margin-top: 4vh;
 }
 
 .event-type{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	text-align: center;
-	margin-bottom: 4vh;
 }
 
 .event-type img{
@@ -200,12 +214,11 @@ button{
 	display: grid; 
 	grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
 	grid-template-rows: auto;
-	justify-content: space-around;
-	margin: 5vh 2vw;
+	justify-content: space-between;
 }
 
 .coming-soon img{
-	height: 26vh; 
+	height: 28vh; 
 	width: 10vw; 
 	object-fit: cover;
 }
@@ -221,21 +234,74 @@ footer{
 .container{	
 	display: grid;
 	grid-template-columns: 12vw 10vw 7vw;
-	justify-content: space-around;}
-
-/* MOBILE VERSION */
-@media only screen and (max-width: 600px){
-
-footer{grid-column: 1/4;}
-
-.banner{grid-column: 1/4; margin: 0px 4vw;}
-
-.main{grid-column: 1/4;}
-
-.box{border-radius: 0;}
-
-.logo{grid-column: 1/2; scale: 80%;}
-
+	justify-content: space-around;
 }
 
+/*---------------------------------------------------------------*/
+/* ADDITIONAL CODE FOR THE ABOUT PAGE */
+
+.display-img{
+	width: 70vw; 
+	margin-bottom: -4vh;
+}
+
+.display-img img{
+	width: 70vw; 
+	height: 20vw; 
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.content-container{
+	display: flex; 
+	justify-content: space-between;
+}
+
+section{
+	width: 35vw; 
+	height: 40vh;
+}
+
+table{
+	height: 4vh; width: 4vw;
+	background-color:#3B3838;
+	font-family: "poppins"; 
+	font-weight: 400;
+	font-size: 16px; 
+	color: #FFFAF2;
+	padding: 1vw;
+	border-radius: 10px;
+}
+
+td{padding: 1vh 1vw;}
+#svar{text-align: right;}
+
+/*---------------------------------------------------------------*/
+/* ADDITIONAL CODE FOR THE PROGRAM PAGE */
+
+.rubriker{	display: grid;
+	grid-template-columns: 8vw 28vw 25vw;
+	justify-content: space-between;
+}
+
+.daily-program{
+	display: grid;
+	grid-template-columns: 8vw 7vw 21vw 8vw 17vw;
+	grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
+	row-gap: 3vh;
+	justify-content: space-between;
+}
+
+.daily-program img{height: 20vh; width: 7vw;}
+
+/*---------------------------------------------------------------*/
+/* MOBILE VERSION */
+@media only screen and (max-width: 600px){
+	.banner{
+		width: 100vw; 
+		justify-content: center;
+	}
+
+	.main{width: 100vw;}
+	footer{width: 100vw;}
 }

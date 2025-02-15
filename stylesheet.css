@@ -31,12 +31,10 @@ nav{
 		overflow: hidden;
 	}
 	
-	li{float: left;}
-	
 	li a, .dropbtn{
 		display: inline-block;
 		text-align: center;
-		padding: 1vh;
+		padding: 4px;
 		text-decoration: none;
 	}
 	
@@ -258,8 +256,7 @@ footer{
 }
 
 section{
-	width: 35vw; 
-	height: 40vh;
+	width: 37vw; 
 }
 
 table{
@@ -293,6 +290,20 @@ td{padding: 1vh 1vw;}
 }
 
 .daily-program img{height: 20vh; width: 7vw;}
+
+/*---------------------------------------------------------------*/
+/* ADDITIONAL CODE FOR THE AVAILABLITY PAGE */
+
+li{
+	font-family: "poppins";
+	font-size: 16px;
+	font-weight: 400;
+	color: #FFFAF2;
+	padding: 1%;
+}
+
+.available{width: 20vw;}
+.available td{padding: 1vh 0;}
 
 /*---------------------------------------------------------------*/
 /* MOBILE VERSION */

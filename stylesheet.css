@@ -306,6 +306,10 @@ li{
 .available td{padding: 1vh 0;}
 
 /*---------------------------------------------------------------*/
+/* ADDITIONAL CODE FOR THE NEWSLETTER PAGE */
+
+
+/*---------------------------------------------------------------*/
 /* MOBILE VERSION */
 @media only screen and (max-width: 600px){
 	.banner{

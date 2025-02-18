@@ -1,49 +1,110 @@
 <!DOCTYPE html>
 
-<HTML lang="sv">
-
-	<head>
+<head>
 	<title>Berit Renströms stipendium - Folkets Bio Umeå</title>
+
+	<link rel="icon" type="image/x-icon" href="/images/logo.png">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" <link href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+	
+	<meta charset="UTF-8">
+	<meta name="description" content="Folkets Bio Umeås officiella webbplats, Umeås biograf för kvalitetsfilm. Öppet varje dag i kulturhuset Väven. Köp dina biljetter här.">
+	<meta name="keywords" content="Folkets bio, biograf, Umeå">
+	<meta name="author" content="Josefine Lundin">
+	
 </head>
 <body>
-	<nav>
-		<a href="./ticketInfo.html">Biljetter</a>
-		<a href="./event.html">Evenemang</a>
-		<a href="./about.html">Om Oss</a>
+	<div class="banner">
+		<nav id="Vnav">
+			<ul>
+				<li class="dropdown"><a class="dropbtn">Biljetter</a>
+					<div class="drop-content">
+						<a href="./ticketInfo.html">Biljettinformation</a><br>
+						<a href="./movies.html">Filmer</a>
+					</div>
+				</li>
+				<li><a href="./event.html">Evenemang</a></li>
+				<li><a href="./about.html">Om Oss</a></li>
+			</ul>
+		</nav>
 
-		<a href="./index.html">
-			<img src="/images/logo.png" height="80" alt="logotyp"></a>
-	
-		<a href="./membership.html">Bli medlem</a>
-		<b>Sökfält</b>
-	</nav>
-	
-	<h1>Berit Renströms stipendium</h1>
-	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, cupiditate 
-		quasi iste itaque hic modi at, nulla ipsum dolorum laudantium esse ea 
-		similique eveniet maxime quis expedita nam. Ex, id!</p>
+		<div class="logo">
+			<a href="./index.html">
+			<img src="/images/logo.png" height="100px" alt="logotyp"></a>
+		</div>
 
-		<button>
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLScVB3JWKoJPnasQsRBj-r3ItiuYdMpSFQtMKXv51GeerTQmpg/viewform">Ansök här</a>
-		</button>
+		<nav id="Hnav">
+			<a id="member" href="./membership.html">Bli medlem</a>
+			<div class="searchbar">
+				<input type="text" placeholder="Sök film, genrer eller event">
+				<i class="material-icons">search</i>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="main">
+		<div class="display-img">
+			<img id="medlem" src="/images/berit.jpg">
+		</div>
+		<div class="box">
+			<h1>Berit Renströms stipendium</h1>
+			<p>
+				Berit var Folkets Bio Umeå. <br><br>
+				Hon var vår historia och hon var vår nutid. Hon värnade om biografen, 
+				alla oss som är aktiva i föreningen och alla personer som besöker oss. 
+				Hon uppmuntrade alla till att besöka filmfestivaler och filmfester, när 
+				och fjärran men allra helst med ett nordligt perspektiv.<br><br>
+
+				Stipendiet ska, i Berits anda, uppmuntra till besök vid filmfestivaler, 
+				filmfester eller andra liknande sammankomster som stärker gemenskap och 
+				filmens betydelse i samvaron.
+			</p>
+
+			<h3>Information för att ansöka stipendiumet</h3>
+			<ul class="stipendium">
+				<li>För att ansöka om Berits Renströms Stipendium behöver du vara medlem i Folkets Bio Umeå.</li>
+				<li>Ansökan får ske max en gång per år och medlem.</li>
+				<li>Stipendiet kan delas ut vid två tillfällen under året.</li>
+				<li>Stipendiet ska täcka hela eller delar av resor, logi och entrébiljetter för en eller flera personer.</li>
+				<li>En reseberättelse presenteras efter att stipendieresan genomförts.</li>
+				<li>Stipendiet kan sökas under hela verksamhetsåret.</li>
+				<li>Styrelsen fattar löpande beslut om stipendiet.</li>
+			</ul>
+
+			<button id="apply">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLScVB3JWKoJPnasQsRBj-r3ItiuYdMpSFQtMKXv51GeerTQmpg/viewform">Ansök här</a>
+			</button>
+			<p>
+				Vid frågor om stipendiet, kontakta info@folketsbioumea.se, som förmedlar kontakt till styrelsen.
+			</p>
+		</div>
+	</div>
 	
 	<footer>
-		<h3>Kontakta oss</h3>
-		<p>072 - 713 43 40</p>
-		<p>info@folketsbioumea.se</p>
-		<p>Folkets Bio Umeå,<br> Västra Strandgatan 11,<br>Lastintaget, 90326 Umeå</p>
-
-		<h3>Om oss</h3>
-		<a href="./about.html">Om Folkets Bio Umeå</a><br>
-		<a href="./findus.html">Hitta till oss</a><br>
-		<a href="./access.html">Tillgänglighet</a><br>
-		<a href="https://www.vaven.se/sve/boka-en-lokal.html">Hyr biografen</a><br>
-		<a href="./schoolarship.html">Berits stipendium</a>
-
-		<h3>Följ oss</h3>
-		<a href="https://instagram.com/folketsbioumea">Instagram</a><br>
-		<a href="https://facebook.com/folketsbioumea">Facebook</a><br>
-		<a href="./newsletter.html">Nyhetsbrev</a><br>
-
+		<div class="container">
+			<div class="contact">
+				<h3>Kontakta oss</h3>
+				<p>072 - 713 43 40</p>
+				<p>info@folketsbioumea.se</p>
+				<p>Folkets Bio Umeå,<br>Västra Strandgatan 11,<br>Lastintaget, 90326 Umeå</p>
+			</div>
+			<div class="about">
+				<h3>Om oss</h3>
+				<a href="./about.html">Om Folkets Bio Umeå</a><br>
+				<a href="./findus.html">Hitta till oss</a><br>
+				<a href="./access.html">Tillgänglighet</a><br>
+				<a href="http://www.vaven.se/sve/boka-lokaler-i-vaven.html">Hyr biografen</a><br>
+				<a href="./schoolarship.html">Berits stipendium</a>
+			</div>
+			<div class="follow">
+				<h3>Följ oss</h3>
+				<a href="https://instagram.com/folketsbioumea">Instagram</a><br>
+				<a href="https://facebook.com/folketsbioumea">Facebook</a><br>
+				<a href="./newsletter.html">Nyhetsbrev</a>
+			</div>
+		</div>
 	</footer>
 </body>

@@ -44,10 +44,11 @@ nav{
 		display: none; 
 		position: absolute; 
 		background-color: #901414;
-		padding-top: 10px;
+		padding: 1vh 2vh 2vh 3vh;
 		border-bottom-right-radius: 10px;
 		border-bottom-left-radius: 10px;
-		margin-top: -1vh;
+		margin: -0.5vh 0 0 -1.6vw;
+
 	}
 	
 	.dropdown-content a {
@@ -123,8 +124,15 @@ h3{
 h4{
 	color: #FFFAF2;
 	font-family: "poppins";
-	font-weight: 500;
+	font-weight: 400;
+	font-size: 18px;
+}
+h5{
+	color: #C8C8C8;
+	font-family: "poppins";
+	font-weight: 400;
 	font-size: 16px;
+	margin: 0;
 }
 
 a{
@@ -157,7 +165,7 @@ p{
 	background-color: #292626;
 	border-radius: 15px;
 	margin: 1vh 0vh;
-	padding: 4vh 4vw;
+	padding: 4vh 4vw 6vh 4vw;
 }
 
 .movies-now{
@@ -183,7 +191,10 @@ p{
 	display: flex;
 	justify-content: space-between;
 }
-.days button{margin: 0;}
+.days button{
+	margin: 0;
+	width: 10vw;
+}
 
 button{
 	background-color: #3B3838;
@@ -227,6 +238,7 @@ footer{
 	border-top-right-radius: 15px;
 	width: 70vw;
 	margin: 1vh auto 0 auto;
+	padding-bottom: 3vh;
 }
 
 .container{	
@@ -240,14 +252,13 @@ footer{
 
 .display-img{
 	width: 70vw; 
-	margin-bottom: -4vh;
+	margin-bottom: -2.8vh;
 }
 
 .display-img img{
 	width: 70vw; 
 	height: 20vw; 
 	object-fit: cover;
-	border-radius: 10px;
 }
 
 .content-container{
@@ -307,7 +318,84 @@ li{
 
 /*---------------------------------------------------------------*/
 /* ADDITIONAL CODE FOR THE NEWSLETTER PAGE */
+form{width: 35vw;}
+.names{
+	display: flex;
+	justify-content: space-between;
+	width: 30vw;
+	margin: 2vh 0;
+}
+#fname{
+	width: 14vw;
+	padding: 1vh;
+	box-sizing: border-box;
+}
 
+#lname{
+	width: 14vw;
+	padding: 1vh;
+	box-sizing: border-box;
+}
+
+#email{width: 30vw;
+	padding: 1vh;
+	box-sizing: border-box;
+}
+
+#submit{
+	width: 14vw;
+	padding: 1vh;
+	margin: 2vh 0;
+	box-sizing: border-box;
+	transition-duration: 0.5s;
+}
+#submit:hover{ background-color: #4d4747;
+}
+
+input{
+	border-radius: 10px;
+	border: none;
+	background-color: #3B3838;
+	color: #FFFAF2;
+	font-family: "poppins";
+	font-size: 16px;
+}
+
+/*---------------------------------------------------------------*/
+/* ADDITIONAL CODE FOR THE SCHOOLARSHIP PAGE */
+
+.stipendium{
+	display: flex;
+	justify-content: flex-start;
+	list-style-type: disc;
+	padding-left: 1vw;
+	flex-direction: column;
+}
+
+#apply{margin: 4vh 0 5vh 0;}
+
+/*---------------------------------------------------------------*/
+/* ADDITIONAL CODE FOR THE MOVIE INFORMATION PAGE */
+
+iframe{
+	width: 70vw; 
+	height: 20vw; 
+	margin-bottom: -2.8vh;
+}
+
+iframe:hover{
+	height: 35vw;
+	margin: -1.5vh;
+}
+
+.tags{
+	width: 27vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tags h4{margin: 0;}
+.less{display: flex; justify-content: center;}
 
 /*---------------------------------------------------------------*/
 /* MOBILE VERSION */

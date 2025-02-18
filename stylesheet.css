@@ -44,10 +44,10 @@ nav{
 		display: none; 
 		position: absolute; 
 		background-color: #901414;
-		padding: 1vh 2vh 2vh 3vh;
+		padding: 1vh 2vh 2vh 3.2vh;
 		border-bottom-right-radius: 10px;
 		border-bottom-left-radius: 10px;
-		margin: -0.5vh 0 0 -1.6vw;
+		margin: -0.5vh 0 0 -1.61vw;
 
 	}
 	
@@ -205,6 +205,8 @@ p{
 	place-self: center;
 }
 
+.button:hover{background-color: #4d4747;}
+
 .event-type{
 	display: flex;
 	justify-content: space-between;
@@ -350,7 +352,7 @@ form{width: 35vw;}
 	box-sizing: border-box;
 	transition-duration: 0.5s;
 }
-#submit:hover{ background-color: #4d4747;
+#submit:hover{background-color: #4d4747;
 }
 
 input{
@@ -388,7 +390,8 @@ iframe{
 iframe:hover{
 	height: 35vw;
 	width: 70vw;
-	margin: -1.7vh auto;
+	margin: -1.5vh auto;
+	border-bottom: solid 4px black;
 }
 
 .tags{
@@ -398,7 +401,7 @@ iframe:hover{
 }
 
 .tags h4{margin: 0;}
-.less{place-self: center;}
+.less{place-self: center; margin-top: 3vh;}
 
 /*---------------------------------------------------------------*/
 /* ADDITIONAL CODE FOR THE FIND US PAGE */
@@ -406,7 +409,22 @@ iframe:hover{
 #map{width: 23vw; height: 33vh;	transition-duration: 0.5s; padding-left: 3vw;margin-top: 5vh;}
 #map:hover{width: 40vw;height: 50vh}
 
+/*---------------------------------------------------------------*/
+/* ADDITIONAL CODE FOR THE EVENT PAGE */
 
+.biovino{
+	margin: 4vh 0;
+	display: grid;
+	grid-template-columns: 7vw 12vw 7vw 12vw 7vw 12vw;
+	grid-template-rows: 1fr;
+	justify-content: space-between;
+}
+
+.biovino img{height: 20vh; width: 7vw;}
+
+.biovino .button{margin-top: 6vh; padding: 1vh 1vw;}
+
+#visa-fler{display: flex; justify-content: center;}
 
 /*---------------------------------------------------------------*/
 /* MOBILE VERSION */

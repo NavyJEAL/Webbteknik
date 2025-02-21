@@ -427,6 +427,61 @@ iframe:hover{
 #visa-fler{display: flex; justify-content: center;}
 
 /*---------------------------------------------------------------*/
+/* PRINT-OUT VERSION */
+@media print{
+	body{background-color: white;}
+
+	h1,h2,h3,h4,h5,p,a{
+		color: black;font-family: Georgia, Times, serif; 
+		padding: 0;
+	}
+
+	h1{margin-bottom: 10px;}
+	#coming h1{page-break-before: always;}
+	h1,h2,h3,h4,h5{font-family: Georgia, Times, serif;}
+	p,a, ::placeholder{font-size: 12pt;}
+
+	.banner{
+		width: 90%; 
+		justify-content: center;
+	}
+
+	.box{
+		width: 95%; 
+		align-items: center;
+		padding: 0; 
+		margin: 0;
+	}
+
+	#Hnav, #Vnav, i, footer, #program, #show-more{display: none;}
+
+	.movies-now{    
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+		grid-template-rows: auto;
+		row-gap: 40px;
+		column-gap: 55px;
+	}
+	.movies-now img{
+		height: 140px; 
+		width: 100px; 
+	}
+
+	.coming-soon{    
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+		grid-template-rows: auto;
+		row-gap: 40px;
+		column-gap: 55px;
+	}
+	.coming-soon img{
+		height: 140px; 
+		width: 100px; 
+	}
+
+/*---------------------------------------------------------------*/
 /* MOBILE VERSION */
 @media only screen and (max-width: 600px){
 	.banner{

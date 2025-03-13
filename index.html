@@ -10,6 +10,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script type="text/javascript" src="showmore.js"></script>
+	<script type="text/javascript" src="searchbar.js"></script>
+	<script type="text/javascript" src="dropdown.js"></script>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -23,7 +26,8 @@
 	<div class="banner">
 			<nav id="Vnav">
 				<ul>
-					<li class="dropdown"><a class="dropbtn">Biljetter</a>
+					<li class="dropdown">
+						<a class="dropbtn">Biljetter</a>
 						<div class="drop-content">
 							<a href="./ticketInfo.html">Biljettinformation</a><br>
 							<a href="./movies.html">Filmer</a>
@@ -53,7 +57,7 @@
 	<div class="main">
 		<div class="box" id="visas-nu">
 			<h1>Visas nu</h1>
-			<div class="movies-now" id="posters">
+			<div class="movies-now" id="nr1">
 				<a href="movieinfo.html"><img src="/images/complete.jpg" alt="Movie title">A Complete Unknown</a>
 				<a><img src="/images/arealpain.jpeg" alt="Movie title">A Real Pain</a>
 				<a><img src="/images/brutalist.jpg" alt="Movie title">The Brutalist</a>
@@ -65,7 +69,19 @@
 				<a><img src="/images/sommarboken.jpg" alt="Movie title">Sommarboken</a>
 				<a><img src="/images/mormor.jpeg" alt="Movie title">Min Mormors Miljoner</a>
 			</div>
-			<button class="button" id="show-more">Visa mer</button>
+			<div class="movies-now" id="nr2">
+				<a href="movieinfo.html"><img src="/images/complete.jpg" alt="Movie title">A Complete Unknown</a>
+				<a><img src="/images/arealpain.jpeg" alt="Movie title">A Real Pain</a>
+				<a><img src="/images/brutalist.jpg" alt="Movie title">The Brutalist</a>
+				<a><img src="/images/babygirl.jpeg" alt="Movie title">Babygirl</a>
+				<a><img src="/images/nosferatu.jpg" alt="Movie title">Nosferatu</a>
+				<a><img src="/images/conclave.jpg" alt="Movie title">Conclave</a>
+				<a><img src="/images/emilia.jpg" alt="Movie title">Emilia Perez</a>
+				<a><img src="/images/maria.jpeg" alt="Movie title">Maria</a>
+				<a><img src="/images/sommarboken.jpg" alt="Movie title">Sommarboken</a>
+				<a><img src="/images/mormor.jpeg" alt="Movie title">Min Mormors Miljoner</a>
+			</div>
+			<button onclick="ShowMore()" class="button" id="show-more">Visa mer</button>
 		</div>
 
 		<div class="box" id="program">
